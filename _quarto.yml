@@ -1,19 +1,39 @@
+authorname: "Myo Minn Oo"
+draft: false
+
+
+title-meta: "McKinnon Lab"
+description-meta: "Mucosal Immunology Lab"
+
+
 project:
   type: website
+  output-dir: docs  
+  preview:
+    port: 4200
+
 
 website:
-  title: "mckinnonlab.github.io"
+  title: "McKinnon Lab"
   navbar:
     left:
       - href: index.qmd
         text: Home
-      - about.qmd
+      - href: about.qmd
+        text: About
 
 format:
   html:
-    theme: cosmo
+    theme: [lux, styles.scss]
     css: styles.css
     toc: true
-
+    grid:
+      sidebar-width: 0px
+      body-width: 1000px
+      margin-width: 250px
+      
 editor: visual
 
+
+execute: 
+  freeze: auto

@@ -1,9 +1,1 @@
----
-title: "About"
----
-
-About this site
-
-```{r}
-1 + 1
-```
+> This website is under development. Stay tuned!
